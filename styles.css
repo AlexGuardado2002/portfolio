@@ -1,0 +1,219 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background: linear-gradient(to right, #0f4c75, #3282b8);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.header-presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-presentacion h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.header-presentacion p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.foto-circular {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Navegación */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* Secciones generales */
+section {
+  width: 85%;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Encabezados de sección */
+section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #0f4c75;
+}
+
+/* SOBRE MÍ */
+#sobre-mi p {
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* PROYECTOS */
+#proyectos {
+  background-color: #dbe9f4;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.proyecto {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  position: relative;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.proyecto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Fondos de proyectos */
+.proyecto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  transition: opacity 0.4s, transform 0.4s;
+  z-index: 0;
+}
+
+.proyecto:hover::before {
+  opacity: 0.35;
+  transform: scale(1.1);
+}
+
+/* Ejemplo de fondos */
+.proyecto.gage-lab::before { background-image: url('GageLab.png'); }
+.proyecto.auditorias-5s::before { background-image: url('5S.png'); }
+.proyecto.otras-aplicaciones::before { background-image: url('Apps.png'); }
+
+/* Texto por encima del fondo */
+.proyecto h3,
+.proyecto p,
+.proyecto a {
+  position: relative;
+  z-index: 1;
+}
+
+/* Botones */
+.btn-powerpoint {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #3282b8;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-powerpoint:hover {
+  background-color: #0f4c75;
+}
+
+/* EXPERIENCIA */
+#experiencia p {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* CONTACTO */
+#contacto {
+  background-color: #0f4c75;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contacto-links {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+.contacto-links a img {
+  width: 55px;
+  filter: brightness(1.2);
+  transition: transform 0.3s;
+}
+
+.contacto-links a:hover img {
+  transform: scale(1.3) rotate(5deg);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #1b262c;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 50px;
+}
