@@ -4,33 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio Alejandro Guardado</title>
-  <!-- Enlazamos el CSS externo -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="header-presentacion">
-      <div class="texto-presentacion">
-        <h1>Alejandro Guardado Herrera</h1>
-        <p>Ing. Desarrollo de Software Multiplataforma</p>
-      </div>
+  <header class="site-header">
+    <div class="intro">
+      <h1>Alejandro Guardado Herrera</h1>
+      <p>Ing. Desarrollo de Software Multiplataforma</p>
     </div>
-
-    <nav>
-      <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- MAIN -->
-  <main class="contenedor-central">
+  <main class="main-container">
     <!-- SOBRE MÍ -->
-    <section id="sobre-mi">
+    <section id="about">
       <h2>Sobre mí</h2>
       <p>
         Soy Alejandro Guardado Herrera, estudiante de Ingeniería en Desarrollo de Software Multiplataforma (2022–2026) y desarrollador con experiencia en digitalización industrial. 
@@ -39,30 +25,30 @@
     </section>
 
     <!-- PROYECTOS -->
-    <section id="proyectos">
+    <section id="projects">
       <h2>Mis Proyectos</h2>
-      <div class="grid-proyectos">
+      <div class="projects-grid">
 
-        <div class="proyecto gage-lab">
+        <div class="card">
           <h3>GageLab</h3>
           <p>
             Sistema para gestión de instrumentos de laboratorio, que registra calibraciones, verificaciones, ubicación y custodia. Incluye dashboards en Power BI y automatizaciones en Power Automate.
           </p>
-          <a href="#" class="btn-powerpoint">Ver más</a>
+          <a href="http://vmc8107pa003:8080/Thingworx/Runtime/index.html#master=Carrier.GageLab.Master.CMXE&mashup=Carrier.GageLab.Home.CMXE" target="_blank" class="btn">Ver más</a>
         </div>
 
-        <div class="proyecto auditorias-5s">
+        <div class="card">
           <h3>Auditorías 5S</h3>
           <p>
             Módulo desarrollado en Power Apps para realizar auditorías de las líneas de ensamble, registrar puntuaciones, retroalimentación y generar reportes en Power BI para seguimiento de KPIs.
           </p>
-          <a href="#" class="btn-powerpoint">Ver más</a>
+          <a href="https://apps.powerapps.com/play/e/default-36839a65-7f3f-4bac-9ea4-f571f10a9a03/a/c20122c7-8157-4b91-b839-2f8042b80f3a?tenantId=36839a65-7f3f-4bac-9ea4-f571f10a9a03&hint=2e47095e-e433-4d4d-8495-be7221e9b575&sourcetime=1725054726577&source=portal#" target="_blank" class="btn">Ver más</a>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCIA -->
-    <section id="experiencia">
+    <section id="experience">
       <h2>Experiencia</h2>
       <p>
         Ing. Digitalización 4.0 | Carrier Planta E. Jun. 2024 - Actualmente. Desarrollo y mantenimiento de aplicaciones en Power Apps y ThingWorx, dashboards en Power BI y soporte a procesos de manufactura.
@@ -70,17 +56,17 @@
     </section>
 
     <!-- CONTACTO -->
-    <section id="contacto">
+    <section id="contact">
       <h2>Contacto</h2>
-      <div class="contacto-links">
-        <a href="mailto:alexguardado2002@gmail.com" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Correo">
+      <div class="social-links">
+        <a href="https://github.com/AlexGuardado2002" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/3291/3291695.png" alt="GitHub">
         </a>
         <a href="https://www.linkedin.com/in/alejandro-guardado" target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
         </a>
       </div>
-      <p class="footer-contacto">© 2025 Alejandro Guardado Herrera</p>
+      <p class="footer-text">© 2025 Alejandro Guardado Herrera</p>
     </section>
   </main>
 </body>
